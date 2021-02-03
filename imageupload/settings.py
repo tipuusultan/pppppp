@@ -13,7 +13,7 @@ SECRET_KEY = 'cll3%$o3ni88@vb!=j$7q&4_kdp^!gt&^(r-u&8y9lsiv9i&en'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['freeytdownloader.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['freeytdownloader.herokuapp.com', 'localhost','t4technology09.herokuapp.com']
 
 
 # Application definition
