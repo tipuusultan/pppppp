@@ -11,7 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'cll3%$o3ni88@vb!=j$7q&4_kdp^!gt&^(r-u&8y9lsiv9i&en'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['freeytdownloader.herokuapp.com', 'localhost']
 
