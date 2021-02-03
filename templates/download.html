@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}YouTube Video Downloader{% endblock title %}
+
+{% block body %}
+  <div class="container my-5">
+<form method='POST' action=''>
+{% csrf_token %}
+  <div class="form-group">
+    <label for="exampleInputEmail1">YouTube URL</label>
+    <input name='url' type="url" class="form-control" id="exampleInputurl" aria-describedby="emailHelp">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+  </div>
+
+  {% if filename %}
+  
+  <a href='{{request.scheme}}://{{site}}/media/ytdownloaded/{{filename}}.mp4'download><button class='btn nt'>Download NOW</button></a>
+  
+  {% endif %}
+
+{% endblock body %}

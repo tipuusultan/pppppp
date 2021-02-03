@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+
+<form method='POST' action='' enctype="multipart/form-data">
+{% csrf_token %}
+  <div class="bg-secondary form-group text-center text-white py-5">
+  <h1>Upload Your Image</h1>
+    {{form}}
+    <input type='submit' value='Upload' class='btn-danger btn'>
+  </div>
+</form>
+
+<div class='row'>
+{% for i in image %}
+<div class='col-sm-4'>
+<div class='card m-2'>
+<img src="{{i.photo.url}}" class="card-img-top" alt="...">
+<a href='{{i.photo.url}}' download><input type='submit' value='Download' class='btn-danger btn'></a>
+
+</div>
+</div>
+{% endfor %}
+</div>
+
+
+{% endblock body %}
+
+
